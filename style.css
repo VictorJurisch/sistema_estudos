@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+
+body {
+    background-color: #ffe6f2;
+    font-family: 'Autour One', cursive;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centraliza o texto */
+}
+
+header {
+    background-color: #ffb3d9;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    flex-direction: row; /* Altera para linha */
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Ajuste conforme necessário */
+}
+
+button {
+    font-family: 'Autour One', cursive;
+    background-color: #ff66b2;
+    color: #fff;
+    border: none;
+    padding: 30px 20px; /* Aumenta ainda mais o tamanho dos botões */
+    margin: 10px;
+    font-size: 2em; /* Aumenta ainda mais o tamanho da fonte */
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3385;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #ffb3d9;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+}
+
+h1{
+    font-size: 3em;
+    line-height: 1.2;
+    font-family: 'Autour One', cursive;
+}
+
+h2 {
+    font-family: 'Autour One', cursive;
+}
+
+p{
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+
+.hide {
+    display: none;
+}
+
+.drag-over {
+    background-color: #f0f0f0;
+}
+
+.kanban-board {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.kanban-column {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-column h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ff66b2;
+}
+
+.kanban-item {
+    background-color: #ffe6f2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    transition: background-color 0.3s ease;
+}
+
+.kanban-item:hover {
+    background-color: #ffb3d9;
+}
+
+.kanban-item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 16px; /* Adjust the font size to make icons smaller */
+    color: black; /* Set icon color to black */
+}
+
+.kanban-item button.edit-task::before {
+    content: '\270E'; /* Unicode for pencil icon */
+}
+
+.kanban-item button.delete-task::before {
+    content: '\1F5D1'; /* Unicode for trash can icon */
+}
+
+#create-task {
+    background: #ff69b4; /* Pink color for create task button */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer;
+    border-radius: 3px;
+}
