@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'db_connection.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $action = $_POST['action'];
